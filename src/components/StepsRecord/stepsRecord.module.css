@@ -1,0 +1,31 @@
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.record-item-date {
+    margin-right: 30px;
+}
+
+.record-item-distance {
+}
+
+.record-item-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.record-item-edit-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transform: rotate(260deg);
+}
+
+.record-item-delete-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
