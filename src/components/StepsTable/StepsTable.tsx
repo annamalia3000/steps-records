@@ -1,6 +1,9 @@
 import { StepsRecord } from "../StepsRecord/StepsRecord";
-import { FormData } from "../types";
 import classes from "./stepsTable.module.css";
+type FormData = {
+  date: string;
+  distance: string;
+};
 
 type RecordsTableProps = {
     records: FormData[];
