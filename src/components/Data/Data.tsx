@@ -1,17 +1,14 @@
 import { StepsRecord } from "../StepsRecord/StepsRecord";
-import classes from "./stepsTable.module.css";
-type FormData = {
-  date: string;
-  distance: string;
-};
+import { FormData } from '../types';
+import classes from "./data.module.css";
 
-type RecordsTableProps = {
+type DataProps = {
     records: FormData[];
     onDeleteRecord: (index: number) => void;
     onEditRecord: (index: number) => void;
 };
 
-export const StepsTable: React.FC<RecordsTableProps> = ({ records, onDeleteRecord, onEditRecord }) => {
+export const Data: React.FC<DataProps> = ({ records, onDeleteRecord, onEditRecord }) => {
   return (
     <div className={classes["steps-table"]}>
       <div className={classes["steps-table-header"]}>
